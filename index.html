@@ -13,7 +13,8 @@
         body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { width: 300; height: 300; float: right; margin: -30px 0 0 0; }
+        #picfrmae {float: right; margin: -30px 0 0 0;}
+        #pic { width: 300; height: 300; }
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
@@ -26,14 +27,59 @@
         dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
+        @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+.snip1293 {
+  font-family: 'Raleway', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px 40px 20px;
+  display: inline-block;
+  margin: 12px 25px;
+  font-weight: 300;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(bottom, #262626 0px, #404040 10px, #262626 10px, #333333 100%);
+  background-image: linear-gradient(to top, #262626 0px, #404040 10px, #262626 10px, #333333 100%);
+  box-shadow: 1px 1px 2px -2px rgba(255, 255, 255, 0.8) inset, -1px -1px 2px -2px rgba(255, 255, 255, 0.3) inset, 1px 1px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.snip1293:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  border-radius: 0 0 5px 5px;
+  background-color: #94c6e7;
+  mix-blend-mode: color;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.snip1293:hover:after,
+.snip1293.hover:after {
+  width: 100%;
+}
+.snip1293:active:after {
+  height: 100%;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
      </style>
 </head>
 
 <body>
 
     <div id="page-wrap">
-    
+    <div id="picfrmae"><a href=cv/cv.pdf><button class="snip1293">Download CV</button></a>
+    </br>
         <img width="300px" height="300px" src="images/shahab.png" alt="Photo of Cthulu" id="pic" />
+        </div>
+        
     
         <div id="contact-info" class="vcard">
         
@@ -55,6 +101,7 @@ I love to learn everything
                 i like many fields of artificial intelligence
             </p>
         </div>
+        
         
         <div class="clear"></div>
         
